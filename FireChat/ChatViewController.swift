@@ -9,12 +9,16 @@
 import UIKit
 import Firebase
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var messagesTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        messagesTableView.delegate = self
+        messagesTableView.dataSource = self
+        messagesTableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
+//        configureTableView()
     }
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
@@ -25,5 +29,24 @@ class ChatViewController: UIViewController {
             print("Error al realizar Log Out:" + error.localizedDescription)
         }
     }
+    
+    // MARK: TableView Delegate
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let textArray = ["akjshdjfa fja daa f ads f asdf kf","2 akjshdjfa fja daa f ads f asdf kfajs dfkahskjd fkjadsfkj  jskkjsk a sjdkjk asjdkj ka akjd","3 akjshdjfa fja daa f ads f asdf kfajs dfkdkjk asjdkj ka akjd ds f asdf kfajs ds f asdf kfajs dfkdkjk asjdkj ka akjd dfkdkjk asjdkj ka akjd"]
+        let cell = messagesTableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
+        
+        cell.messageLabel.text = textArray[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+//    func configureTableView() {
+//        messagesTableView.rowHeight = UITableViewAutomaticDimension
+//        messagesTableView.estimatedRowHeight = 120.0
+//    }
     
 }

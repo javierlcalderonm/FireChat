@@ -17,6 +17,9 @@
 		CD3FF0251FE0894D002C432D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3FF0241FE0894D002C432D /* LogInViewController.swift */; };
 		CD3FF0281FE089A7002C432D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3FF0271FE089A7002C432D /* RegisterViewController.swift */; };
 		CD3FF02A1FE089B1002C432D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3FF0291FE089B1002C432D /* ChatViewController.swift */; };
+		CD4474A41FE341B4007F58B0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4474A31FE341B4007F58B0 /* Message.swift */; };
+		CDA03FA71FE1D4B30035C224 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA03FA51FE1D4B30035C224 /* CustomTableViewCell.swift */; };
+		CDA03FA81FE1D4B30035C224 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA03FA61FE1D4B30035C224 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		CD3FF0241FE0894D002C432D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CD3FF0271FE089A7002C432D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CD3FF0291FE089B1002C432D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CD4474A31FE341B4007F58B0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CDA03FA51FE1D4B30035C224 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		CDA03FA61FE1D4B30035C224 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		CDA47E8B6447BF879C5E164D /* Pods_FireChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,13 +84,16 @@
 		CD3FF00E1FE07DD7002C432D /* FireChat */ = {
 			isa = PBXGroup;
 			children = (
-				CD3FF00F1FE07DD7002C432D /* AppDelegate.swift */,
-				CD3FF0241FE0894D002C432D /* LogInViewController.swift */,
-				CD3FF0111FE07DD7002C432D /* WelcomeViewController.swift */,
 				CD3FF0131FE07DD7002C432D /* Main.storyboard */,
-				CD3FF0231FE07E2B002C432D /* Support Files */,
+				CD3FF00F1FE07DD7002C432D /* AppDelegate.swift */,
+				CD3FF0111FE07DD7002C432D /* WelcomeViewController.swift */,
+				CD3FF0241FE0894D002C432D /* LogInViewController.swift */,
 				CD3FF0271FE089A7002C432D /* RegisterViewController.swift */,
 				CD3FF0291FE089B1002C432D /* ChatViewController.swift */,
+				CD3FF0231FE07E2B002C432D /* Support Files */,
+				CDA03FA51FE1D4B30035C224 /* CustomTableViewCell.swift */,
+				CDA03FA61FE1D4B30035C224 /* CustomTableViewCell.xib */,
+				CD4474A31FE341B4007F58B0 /* Message.swift */,
 			);
 			path = FireChat;
 			sourceTree = "<group>";
@@ -173,6 +182,7 @@
 				CD3FF01A1FE07DD7002C432D /* LaunchScreen.storyboard in Resources */,
 				CD3FF0221FE07E25002C432D /* GoogleService-Info.plist in Resources */,
 				CD3FF0171FE07DD7002C432D /* Assets.xcassets in Resources */,
+				CDA03FA81FE1D4B30035C224 /* CustomTableViewCell.xib in Resources */,
 				CD3FF0151FE07DD7002C432D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,11 +254,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA03FA71FE1D4B30035C224 /* CustomTableViewCell.swift in Sources */,
 				CD3FF0121FE07DD7002C432D /* WelcomeViewController.swift in Sources */,
 				CD3FF0101FE07DD7002C432D /* AppDelegate.swift in Sources */,
 				CD3FF0251FE0894D002C432D /* LogInViewController.swift in Sources */,
 				CD3FF02A1FE089B1002C432D /* ChatViewController.swift in Sources */,
 				CD3FF0281FE089A7002C432D /* RegisterViewController.swift in Sources */,
+				CD4474A41FE341B4007F58B0 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
